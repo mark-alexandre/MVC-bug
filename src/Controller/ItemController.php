@@ -27,12 +27,12 @@ class ItemController extends AbstractController
      * @throws \Twig\Error\RuntimeError
      * @throws \Twig\Error\SyntaxError
      */
-    public function index() :array
+    public function index()
     {
         $itemManager = new ItemManager();
-        $items = $this->selectALL();
+        $items = $itemManager->selectAll();
 
-        $this->twig->render('Item/index.twig', ['$items' => $items]);
+        return $this->twig->render('Item/index.html.twig', ['items' => $items]);
     }
 
 

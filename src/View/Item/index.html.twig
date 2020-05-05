@@ -1,10 +1,10 @@
-{{ extends 'layout.html.twig' }}
+{% extends 'layout.html.twig' %}
 
 {% block content %}
     <h1>Items</h1>
     <ul>
         {% for items in item %}
-            <li><a href="/item/show/{{ item.id }}">{{ item.id }}. {{ item.tilte }}</li></a>
+            <li><a href="/item/show/{{ item.id }}">{{ item.id }}. {{ item.tilte }}</a></li>
         {% else %}
             <li>Nothing to display</li>
         {% endfor %}

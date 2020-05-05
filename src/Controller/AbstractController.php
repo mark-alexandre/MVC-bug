@@ -16,7 +16,7 @@ use Twig\Loader\FilesystemLoader;
 /**
  *
  */
-class abstract AbstractController
+abstract class AbstractController
 {
     /**
      * @var Environment

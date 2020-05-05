@@ -12,17 +12,17 @@ namespace App\Model;
 /**
  *
  */
-class ItemManager implements AbstractManager
+class ItemManager extends AbstractManager
 {
     /**
      *
      */
-    const TABLE = 'item'
+    const TABLE = 'item';
 
     /**
      *  Initializes this class.
      */
-    public function ___construct()
+    public function __construct()
     {
         parent::__construct(self::TABLE);
     }

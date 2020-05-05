@@ -1,5 +1,5 @@
 <?php
-exit();
+
 /**
  * Created by PhpStorm.
  * User: root
